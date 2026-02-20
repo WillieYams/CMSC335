@@ -1,0 +1,57 @@
+html {
+    font-size: 16px;
+}
+
+/* body */
+body {
+    /* background pic */
+    background-image: url("images/teapic.jpg");
+    background-size: cover;
+
+    /* google font */
+    font-family: "Cause", cursive;
+}
+
+/* custom property */
+:root {
+    --header1-color: black;
+    --header2-color: green;
+    --header3-color: red;
+}
+
+h1 {
+    color: var(--header1-color);
+}
+
+h2 {
+    color: var(--header2-color);
+}
+
+h3 {
+    color: var(--header3-color);
+}
+
+/* table */
+table {
+    border-collapse: collapse;
+    border: 0.1rem solid black;
+    background-color: white;
+}
+
+th, td {
+    border: 0.1rem solid black;
+    padding: 0.5rem;
+}
+
+thead {
+    background-color: tan;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: antiquewhite;
+}
+
+tbody tr:nth-child(even) {
+    background-color: grey;
+}

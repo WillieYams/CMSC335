@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+         <!-- google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cause:wght@100..900&display=swap" rel="stylesheet">
+
+        <!-- falvicon -->
+        <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="shortcut icon" href="favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+
+        <title>WillieYams Tea Site</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <!-- header -->
+        <header>
+            <h1>Terpconnect Static Site</h1>
+            <h2>Render Info</h2>
+
+            <ul>
+                <li><strong>Name:</strong> WillieYams</li>
+                <li><strong>Render Location:</strong>
+                    <a href="https://cmsc335-5i4l.onrender.com/"> https://cmsc335-5i4l.onrender.com/</a>
+                </li>
+            </ul>
+            
+            <strong>Last Modified:</strong><!--#echo var="LAST_MODIFIED" --><br>
+            <h2>Actual Page</h2>
+        </header>
+
+        <!-- actual site now-->
+        <h3>How to brew different teas!</h3>
+        <p> This site will help you brew the perfect cup :3</p>
+
+        <!-- TEAble table -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Tea</th>
+                    <th>Temperature</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Red Tea</td>
+                    <td>210°F</td>
+                    <td>6 minutes</td>
+                </tr>
+
+                <tr>
+                    <td>White Tea</td>
+                    <td>180°F</td>
+                    <td>3 minutes</td>
+                </tr>
+
+                <tr>
+                    <td>Green Tea</td>
+                    <td>175°F</td>
+                    <td>2 minutes</td>
+                    
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- video -->
+        <h3>YouTube video explaining these 3 teas.</h3>
+        <a href="https://youtu.be/OsSRJJCS3us?si=LaVqFziFfHw2X9Hy" target="_blank" rel="noopener">
+            <img src="https://img.youtube.com/vi/OsSRJJCS3us/0.jpg" alt="video thumbnail">
+        </a>
+
+    </body>
+</html>
