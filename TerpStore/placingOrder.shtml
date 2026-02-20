@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <title>Placing Order</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+
+    <body>
+        
+        <div id="container" class="page orderPage">
+            
+            <h1 class="mainHeader">Placing Order</h1>
+
+            <div class="orderBox">
+                
+                <form action="processing/placingOrder.php" method="post">
+                    
+                    <!-- item serial # -->
+                    <div class="orderRow">
+                
+                        <label class="orderLabel" for="serialNumber">Item's Serial #:</label>
+                        <input id="serialNumber" type="text" name="serialNumber" placeholder="umd-item-0000" required autofocus/>
+                    </div>
+
+                    <!-- credit card # -->
+                    <div class="orderRow">
+                        
+                        <label class="orderLabel" for="cc1">Credit Card #:</label>
+                        <input id="cc1" class="ccField" type="text" name="cc1" maxlength="4" required/>
+                        -
+                        <input class="ccField" type="text" name="cc2" maxlength="4" required/>
+                        -
+                        <input class="ccField" type="text" name="cc3" maxlength="4" required/>
+                        -
+                        <input class="ccField" type="text" name="cc4" maxlength="4" required/>
+                    </div>
+
+                    <!-- shipping address -->
+                    <div class="orderRow">
+                        
+                        <label class="orderLabel" for="shipping">Shipping Address</label>
+                        <input id="shipping" type="text" name="shipping" maxlength="80" required/>
+                    </div>
+
+                    <!-- contact email address -->
+                    <div class="orderRow">
+                        
+                        <label class="orderLabel" for="orderEmail">Contact Email Address:</label>
+                        <input id="orderEmail" type="email" name="email" placeholder="example@terpmail.umd.edu"/>
+                    </div>
+
+                    <!-- buttons -->
+                    <div class="orderRow buttonRow">
+                        
+                        <input type="submit" value="Submit Order"/>
+                        <input type="reset" value="Clear"/>
+                    </div>
+
+                </form>
+            </div>
+
+            <!--#include virtual="footer.shtml" -->
+        </div>
+    </body>
+</html>

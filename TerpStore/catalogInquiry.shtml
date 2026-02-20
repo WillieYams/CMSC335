@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <title>Catalog Inquiry</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+
+    <body>
+        
+        <div id="container" class="page catalogPage">
+            
+            <h1 class="mainHeader">Catalog Inquiry</h1>
+
+            <div class="catBox">
+                
+                <form action="http://npp.cs.umd.edu/cmsc335/projects/TerpStore/catalogInquiry.php" method="get">
+
+                    <div class="catRow">
+                        
+                        <!-- item category -->
+                        <label class="catLabel" for="catChoice">Item Category:</label>
+                        
+                        <input id="catChoice" type="text" name="item-choice" list="catList" required autofocus>
+
+                        <datalist id="catList">
+                            <option value="clothes"></option>
+                            <option value="books"></option>
+                            <option value="music"></option>
+                            <option value="food"></option>
+                            <option value="other"></option>
+                        </datalist>
+                    </div>
+
+                    <!-- maximum cost -->
+                    <div class="catRow">
+                        
+                        <label class="catLabel" for="catCost">Maximum Cost:</label>
+                        <input id="catCost" type="number" name="maximumCost" min="1" max="1000" step="5" value="1"/>
+                    </div>
+
+                    <!-- available on campus -->
+                    <div class="catRow">
+                        
+                        <input id="onCampus" type="checkbox" name="availableOnCampus"/>
+                        <label class="catLabel" for="onCampus">Available on Campus</label>
+                    </div>
+
+                    <!-- available online -->
+                    <div class="catRow">
+                        
+                        <input id="online" type="checkbox" name="availableOnline" checked/>
+                        <label class="catLabel" for="online">Available Online</label>
+                    </div>
+
+                    <!-- additional information -->
+                    <div class="catRow">
+                        
+                        <label class="catLabel" for="info">Additional Information:</label>
+                        <textarea id="info" name="info" rows="5" cols="50"></textarea>
+                    </div>
+
+                    <!-- contact email address -->
+                    <div class="catRow">
+                        
+                        <label class="catLabel" for="catEmail">Contact Email Address:</label>
+                        <input id="catEmail" type="email" name="email" placeholder="example@terpmail.umd.edu"/>
+                    </div>
+
+                    <!-- buttons -->
+                    <div class="catRow">
+                        
+                        <input type="submit" value="Submit Inquiry"/>
+                        <input type="reset" value="Clear"/>
+                    </div>
+                </form>
+            </div>
+
+        <!--#include virtual="footer.shtml" -->
+        </div>
+    </body>
+</html>
