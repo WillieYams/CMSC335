@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- The title (to be used with <title> tag) for the document will be "UMD HTML/CSS Summer Camp." -->
+        <title>UMD HTML/CSS Summer Camp</title>
+
+        <!-- Implement the CSS in the Summer.css file. -->
+        <link rel="stylesheet" href="Summer.css">
+    </head>
+
+    <body>
+        <div id="wrapper" class="page">
+            
+            <div id="header">
+                
+                <!-- When a user clicks on the University of MD globe, a new page/tab will open with the CS Department website (www.cs.umd.edu). -->
+                <a href="https://www.cs.umd.edu/" target="_blank" rel="noopener">
+                    <img id="globe" src="UMDGlobe.gif" alt="UMDGlobe image" 
+                    width="85" height="80">
+                </a>
+
+                <!-- deptcs -->
+                <img id="dept" src="deptcs.png" alt="deptcs image">
+            </div>
+            
+            <!-- main header -->
+            <h1 id="mainHeader">UMD HTML/CSS Summer Camp</h1>
+
+            <!-- para1 -->
+            <p id = "para1">
+                The UMD HTML/CSS Summer camp provides seminars to introduce adults to HTML and CSS.<br>
+                Located in the heart of the <strong>City of College Park</strong>, the camp is a two-week program starting June 1<sup>st</sup><br>
+                and ending on June 22<sup>nd</sup>.
+            </p>
+            
+            <!-- schedule -->
+            <h2 id="schHeader">Schedule</h2>
+            <br>
+            <p id="weekHeader">Weekly Schedule</p>
+
+            <div id="tableBox"> 
+                
+                <table id="schTable">
+                    
+                    <thead>
+                        <tr>
+                        <th>Week</th>
+                        <th>Monday</th>
+                        <th>Wednesday</th>
+                        <th>Friday</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                        <td rowspan="2">#1</td>
+                        <td>HTML Intro</td>
+                        <td>Images</td>
+                        <td><strong>Editors</strong></td>
+                        </tr>
+
+                        <tr>
+                        <td>HTML Tags</td>
+                        <td>Tables</td>
+                        <td><em>Validators</em></td>
+                        </tr>
+
+                        <tr>
+                        <td rowspan="2">#2</td>
+                        <td>CSS Intro</td>
+                        <td colspan="2">
+                            
+                            <!-- The "Campus Tour" link is https://umd.edu/visit -->
+                            <!-- When you hover over the "Campus Tour" link the message "Virtual Tour" should appear (use the title attribute). -->
+                            <a href="https://umd.edu/visit" title="Virtual Tour" target="_blank" rel="noopener">Campus Tour</a>
+                        </td>
+                        </tr>
+
+                        <tr>
+                        <td>Layout</td>
+                        <td>Menus</td>
+                        <td>Other</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        
+            <!-- resources -->
+            <h2 id="resHeader">Resources</h2>
+
+            <ol type="A">
+                <li>Online Learning
+                    <ul>
+                        <li>
+                            <a href="http://www.htmldog.com/">http://www.htmldog.com/</a>
+                        </li>
+                        <li>
+                            <a href="http://www.w3schools.com/">http://www.w3schools.com/</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>Validators
+                    <ol>
+                        <li>
+                            <a href="http://validator.w3.org/#validate-by-upload/">http://validator.w3.org/#validate-by-upload/</a>
+                        </li>
+                        <li>
+                            <a href="http://jigsaw.w3.org/css-validator/">http://jigsaw.w3.org/css-validator/</a>
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+
+            <!-- add info -->
+            <h2 id="infoHeader">Additional Information</h2>
+            
+            <p id="para2">
+                Information about your class instructor can be found at
+
+                <!-- Replace the Instructor.html link you see in the image with https://www.cs.umd.edu/~nelson/ -->
+                <a href="https://www.cs.umd.edu/~nelson/">https://www.cs.umd.edu/~nelson/</a>
+            </p>
+
+            <!-- footer -->
+            <p id="cr">
+                &copy; Copyright UMD | UMD HTML/CSS Summer Camp | <em>All Rights Reserved.</em>
+            </p>
+            
+            <p id="dev">
+                Developed by: William Y. Chiang
+            </p>
+
+            <hr>
+
+        </div>
+    </body>
+</html>
