@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Photo Viewer</title>
+        <link rel="stylesheet" href="style.css" />
+
+        <!-- defer (JS) -->
+        <script defer src="code.js"></script>
+    </head>
+
+    <body>
+
+        <div id="wrapper">
+
+            <h1 id="header">Photo Viewer</h1>
+
+            <!-- image box -->
+            <div id="imagebox">
+                
+                <img id="image" src="InitialImage.jpg" alt="image not here"/>
+            </div>
+
+            <!-- photo form (reset function)-->
+            <form id="photoForm">
+
+                <!-- statusFS -->
+                <fieldset>
+                    
+                    <legend>Status</legend>
+
+                    <div class="row">
+
+                        <label for="imageName">Photo Being Displayed:</label>
+                        <input id="imageName" type="text" disabled/>
+                    </div>
+
+                    <!-- msg for JS -->
+                    <div id="msg"></div>
+                </fieldset>
+
+                <!-- localFS -->
+                <fieldset>
+
+                    <legend>Loading Images (Local Folder)</legend>
+
+                    <div class="row">
+                        
+                        <label for="folder">Photos' Folder:</label>
+                        <input id="folder" type="text" value="umcp/"/>
+
+                        <label class="l2" for="commonName">Common Name:</label>
+                        <input id="commonName" type="text" value="college"/>
+                    </div>
+
+                    <div class="row">
+
+                        <label for="startNum">Start Photo Number:</label>
+                        <input id="startNum" type="text" value="2"/>
+
+                        <label class="l2" for="endNum">End Photo Number:</label>
+                        <input id="endNum" type="text" value="4"/>
+                    </div>
+
+                    <div class="row">
+                        
+                        <input id="localBtn" type="button" value="Load Photos"/>
+                    </div>
+                </fieldset>
+
+                <!-- jsonFS -->
+                <fieldset>
+
+                    <legend>Loading Images (JSON File)</legend>
+                    
+                    <div class="row">
+                        <label for="url">URL:</label>
+                        <input id="url" type="text"
+                            value="http://www.cs.umd.edu/~nelson/classes/resources/cmsc335/images/imagesSet1.json"
+                        />
+
+                        <input id="jsonBtn" type="button" value="Load JSON"/>
+                    </div>
+                </fieldset>
+
+                <!-- iterFS -->
+                <fieldset>
+                    
+                    <legend>Iterating</legend>
+                    
+                    <div class="row">
+
+                        <input id="prevBtn" type="button" value="Previous Photo"/>
+                        <input id="nextBtn" type="button" value="Next Photo"/>
+                        <input id="firstBtn" type="button" value="First Photo"/>
+                        <input id="lastBtn" type="button" value="Last Photo"/>
+                    </div>
+                </fieldset>
+
+                <!-- slideFs -->
+                <fieldset>
+
+                    <legend>SlideShows</legend>
+
+                    <div class="row">
+
+                        <input id="slideBtn" type="button" value="SlideShow"/>
+                        <input id="randomBtn" type="button" value="RandomSlideShow" />
+                        <input id="stopBtn" type="button" value="StopSlideShow" />
+                    </div>
+                </fieldset>
+
+                <!-- resetBtn -->
+                <div class="row">
+
+                    <input id="resetBtn" type="reset" value="Reset Form Values" />
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

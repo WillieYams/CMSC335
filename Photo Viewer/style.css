@@ -1,0 +1,102 @@
+html {
+    
+    font-size: 16px;
+}
+
+/* wrapper and the page border */
+#wrapper {
+    
+    background-color: white;
+    margin: 1rem;
+    padding: 1rem;
+
+    border: 2rem groove brown;
+}
+
+/* header */
+#header {
+
+    font-size: 2rem;
+    text-decoration: underline;
+    font-weight: bold;
+    color: brown;
+}
+
+/* imagebox and the two borders*/
+#imagebox {
+    
+    width: fit-content;
+    margin: 0 auto 1rem auto; 
+    padding: 0.1rem;
+    
+    border: 0.5rem double black;    
+}
+
+/* image */
+#image {
+    
+    display: block;
+    width: 50rem;       
+    height: auto;
+    max-width: 100%;
+}
+
+/* fs */
+fieldset {
+
+    margin: 1rem;
+    padding: .5rem;
+    border: 0.1rem solid grey;
+}
+
+/* legend */
+legend {
+
+    font-weight: bold;
+}
+
+/* row */
+.row {
+    
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin: 0.4rem 0;
+}
+
+/* l(able)2 */
+.l2 {
+    
+    margin-left: .5rem;
+}
+
+/* image and url box need to be long */
+#imageName, #url {
+    
+    width: 45rem;
+}
+
+/* btns */
+input[type="button"], input[type="reset"] {
+    
+    background-color: lightgrey;
+    border: 0.1rem solid grey; 
+
+    font-size: 1rem;
+    box-shadow: 0.2rem 0.2rem 0.2rem black;
+}
+
+/* resetBtn */
+#resetBtn {
+
+    margin-left: 1rem;
+}
+
+/* msg */
+#msg {
+
+    color: red;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
