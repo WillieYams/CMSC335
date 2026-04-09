@@ -1,0 +1,250 @@
+/* container */
+.page {
+
+    background-image: url("images/JimHenson.jpg");
+    background-size: cover;
+    
+    width: 100%;
+
+    border: 0.5rem solid green;
+    box-sizing: border-box;
+}
+
+
+
+/* main header */
+.mainHeader {
+    
+    font-size: 3rem;
+    text-decoration: underline;
+    color: azure;
+
+    background-color: rgba(0, 0, 0, 0.4);
+    width: fit-content;
+    margin: 1rem;
+}
+
+/* main box */
+.mainBox {
+
+    text-align: center;
+    border: 0.1rem solid black;
+    
+    background-color: rgba(211, 211, 211, 0.8);
+    width: fit-content; 
+    padding: 0rem 3rem;
+    margin: 15rem auto 25rem auto;  
+}
+
+/* main links */
+.mainLinks {
+
+    font-size: 1.5rem;
+    text-decoration: underline;
+
+    display: inline-block;
+}
+
+.mainLinks:link {
+
+    color: brown;
+}
+
+.mainLinks:visited {
+
+    color: beige;
+}
+
+.mainLinks:hover {
+
+    transform: scale(0.8);
+}
+
+
+
+/* footer */
+footer{
+    
+    position: relative;
+    outline: 0.1rem solid rgba(211, 211, 211, 0.8);
+    border: 1.0rem ridge rgba(211, 211, 211, 0.8); 
+}
+
+footer::before { 
+    
+    content: ""; 
+    position: absolute; 
+    top: -1rem; 
+    left: -1rem; 
+    right: -1rem; 
+    bottom: -1rem; 
+    border: .5rem solid lightskyblue; 
+    pointer-events: none; 
+}
+
+footer > div{
+    
+    text-align: center;
+    background-color: red;
+    padding: 1rem;
+  
+}
+
+footer a{
+    
+    font-size: 1.5rem;
+    text-decoration: underline;
+    font-style: italic;
+    color: beige;
+    display: inline-block;
+}
+
+footer a:hover{
+    
+    transform: scale(0.8);
+}
+
+
+
+
+
+/* catalog inquiry box */
+.catBox{
+    background-color: rgba(255, 255, 255, 0.85);
+    width: 38rem;
+    padding: 1rem;
+
+    border: .5rem solid azure;
+    margin: 3rem 0 15rem 3rem;
+    box-sizing: border-box;
+}
+
+.catRow{
+
+    margin-bottom: .5rem;
+}
+
+.catLabel{
+
+    font-size: 1.5rem;
+    text-decoration: underline;
+    vertical-align: middle;
+    display: inline-block; 
+}
+
+#catChoice,
+#catCost,
+#catEmail{
+
+    font-size: 1rem;
+    vertical-align: middle;
+    border: 0.2rem solid red;
+    padding: 0.2rem;
+}
+
+#catChoice{
+
+    width: 10rem;
+}
+
+#catCost{
+
+    width: 5rem;
+}
+
+#catEmail{
+
+    width: 15rem;
+}
+
+input[type="checkbox"]{
+
+    vertical-align: middle;
+    margin-right: 1rem;
+    transform: scale(1.5);
+}
+
+#info{
+
+    border: 0.1rem solid black;
+    padding: 1rem;
+    
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+input[type="submit"],
+input[type="reset"]{
+    
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.85);
+    
+    width: 7.5rem;
+    height: 2.5rem;
+    margin: .5rem;
+
+    border: 0.1rem solid black;
+    border-radius: 0.5rem;
+
+    outline: 0.1rem solid black;
+    outline-offset: 0.1rem;
+}
+
+
+
+
+
+/* placing order box */
+.orderBox{
+    
+    background-color: rgba(255, 255, 255, 0.85);
+    width: 38rem;
+    padding: 1rem;
+
+    border: .5rem solid azure;
+    margin: 3rem 0rem 25rem 3rem;
+    box-sizing: border-box;
+}
+
+.orderRow{
+    
+    margin-bottom: .5rem;
+}
+
+.orderLabel{
+    
+    font-size: 1.5rem;
+    text-decoration: underline;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+#serialNumber,
+#shipping,
+#orderEmail{
+    
+    font-size: 1rem;
+    vertical-align: middle;
+    border: 0.2rem solid red;
+    padding: 0.2rem;
+}
+
+#orderEmail{
+
+    width: 15rem;
+}
+
+.ccField{
+
+    font-size: 1rem;
+    border: 0.2rem solid red;
+    padding: 0.2rem;
+    width: 4rem;
+    text-align: center;
+}
+
+.buttonRow{
+
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}

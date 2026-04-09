@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <title>Terp Store</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+
+    <body>
+        
+        <div id="container" class="page indexPage">
+            
+            <h1 class="mainHeader">Terp Store</h1>
+
+            <div class="mainBox">
+            
+                <a class="mainLinks" href="catalogInquiry.shtml">Catalog Inquiry</a>
+                <br/>
+                <a class="mainLinks" href="placingOrder.shtml">Placing Order</a>
+            </div>
+            
+            <!--#include virtual="footer.shtml" -->
+        </div>
+    </body>
+</html>
