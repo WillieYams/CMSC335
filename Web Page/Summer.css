@@ -1,0 +1,125 @@
+/* Do not remove this rule */
+html {
+    font-size: 14px;
+}
+
+/* body */
+body {
+    background-color: antiquewhite;
+    color: black;
+    padding: 2.5rem;
+}
+
+/* page */
+.page {
+    background-color: white;
+    padding: 1rem;
+
+    /*thank piazza I could not figure this out */
+    outline: 0.1rem solid blue;
+    border: 1.0rem ridge blue;   
+    position: relative;
+}
+
+/* borders */
+.page::before {
+    content: "";
+    position: absolute;
+    top: -2.5rem;
+    left: -2.5rem;
+    right: -2.5rem;
+    bottom: -2.5rem;
+    border: 0.2rem solid brown;
+    pointer-events: none;
+}
+
+.page::after {
+    content: "";
+    position: absolute;
+    top: -2.0rem;
+    left: -2.0rem;
+    right: -2.0rem;
+    bottom: -2.0rem;
+    border: 0.2rem solid brown;
+    pointer-events: none;
+}
+
+/* The only unit you can use in the CSS file is rem (except for the html element which we have already set to be 14px). Do not use em either; only use rem. You will lose credit if you use a unit other than rem. */
+#mainHeader {
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* When users hover over the first paragraph (the one starting with "The UMD ...") the color of the text must change from brown to red. */
+#para1 {
+    color: brown;
+}
+
+#para1:hover {
+    color: red;
+}
+
+#para1::first-letter {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* schedule header */ 
+#schHeader {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* week header */ 
+#weekHeader {
+    color: blue;
+    text-decoration: underline;
+    font-style: italic;
+    
+    position: absolute;
+    top: 20.5rem;
+    left: 7.5rem;
+}
+
+/* schedule table*/
+#tableBox {
+    display: inline-block;
+    border: 0.1rem solid black;
+}
+
+#schTable {
+    border-collapse: separate;
+}
+
+#schTable th {
+    font-weight: bold;
+    color: brown;
+    background-color: antiquewhite;
+}
+
+#schTable th,
+#schTable td {
+    border: 0.1rem solid black;
+    white-space: nowrap;
+}
+
+/* resources */
+#resHeader {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* add info */ 
+#infoHeader {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* apparently I don't need a hover? */
+#para2 {
+    color: brown;
+}
