@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <title>Research Form</title>
+        <link rel="stylesheet" href="research.css"/>
+
+        <!-- defer JS -->
+        <script defer src="research.js"></script>
+    </head>
+
+    <body>
+
+        <div id="wrapper">
+
+            <h1 id="mainHeader">Research Form</h1>
+
+            <!-- mainForm -->
+            <form id="mainForm" action="researchProcessing.php" method="get">
+
+                <!-- General Information fs -->
+                <fieldset class="outerFS">
+                    
+                    <legend class="outerLegend">General Information</legend>
+
+                    <!-- Firstname and Lastname -->
+                    <div class="formRow">
+                        
+                        <label>Firstname:</label>
+                        <input id="firstname" type="text" name="firstname" required/>
+
+                        <label>Lastname:</label>
+                        <input id="lastname" type="text" name="lastname" required/>
+                    </div>
+
+                    <!-- Phone (I realized I need the php variable names) and Email -->
+                    <div class="formRow">
+
+                        <label>Phone:</label>
+                        <input id="phoneFirstPart"  type="text" name="phoneFirstPart"
+                            required maxlength="3" size="3"/>
+                        -
+                        <input id="phoneSecondPart" type="text" name="phoneSecondPart" 
+                            required maxlength="3" size="3"/>
+                        -
+                        <input id="phoneThirdPart"  type="text" name="phoneThirdPart"  
+                            required maxlength="4" size="4"/>
+
+                        <label>Email:</label>
+                        <input id="email" type="email" name="email" required/>
+                    </div>
+                </fieldset>
+
+                <!-- Research Study Data fieldset -->
+                <fieldset class="outerFS">
+
+                    <legend class="outerLegend">Research Study Data</legend>
+
+                    <!-- Age/Height/Weight fs -->
+                    <fieldset>
+                        
+                        <legend>Age/Height/Weight</legend>
+
+                        <div class="formRow">
+
+                             <!-- gonna make it bold here to save effort in css -->
+                            <label><strong>Age:</strong></label>
+                            <input id="age" type="number" name="age" min="1" max="125"/>
+
+                            <label class="gapLabel"><strong>Height:</strong></label>
+                            <input id="heightFeet" type="number" name="heightFeet" min="2" max="7"/>
+                            <em>Feet</em>
+                            <input id="heightInches" type="number" name="heightInches" min="0" max="11"/>
+                            <em>Inches</em>
+
+                            <label class="gapLabel"><strong>Weight:</strong></label>
+                            <input id="weight" type="number" name="weight" min="1" max="600"/>
+                            <em>Pounds</em>
+                        </div>
+                    </fieldset>
+
+                    <!-- Conditions fs -->
+                    <fieldset>
+                        
+                        <legend>Conditions</legend>
+                        
+                        Which of the following conditions are present in your family? 
+                        (Check all that apply)<br/>
+
+                        <!-- Conditions checkbox -->
+                        <div class="formRow">
+
+                            <input id="highBloodPressure" type="checkbox" 
+                                name="highBloodPressure" value="High Blood Pressure"/>
+                            <label>High Blood Pressure</label>
+                            
+                            <input id="diabetes" type="checkbox" name="diabetes" value="Diabetes"/>
+                            <label>Diabetes</label>
+                            
+                            <input id="glaucoma" type="checkbox" name="glaucoma" value="Glaucoma"/>
+                            <label>Glaucoma</label>
+                            
+                            <input id="asthma" type="checkbox" name="asthma" value="Asthma"/>
+                            <label>Asthma</label>
+                            
+                            <input id="none" type="checkbox" name="none" value="None"/>
+                            <label>None</label>
+                        </div>
+                    </fieldset>
+
+                    <!-- Time Period fs -->
+                    <fieldset>
+
+                        <legend>Time Period</legend>
+
+                        How long have you experienced any of the above conditions?<br/>
+
+                        <div class="formRow">
+
+                            <!-- Time Period radio buttons -->
+                            <input id="never" type="radio" name="period" value="Never"/>
+                            <label>Never</label>
+
+                            <input id="lessYear" type="radio" name="period" value="Less than a year" />
+                            <label>Less than a year</label>
+                            
+                            <input id="otYear" type="radio" name="period" value="One to two years"/>
+                            <label>One to two years</label>
+                            
+                            <input id="moreYear" type="radio" name="period" value="More than two years"/>
+                            <label>More than two years</label>
+                        </div>
+                    </fieldset>
+
+                    <!-- Study Information fs with default values -->
+                    <fieldset>
+
+                        <legend>Study Information</legend>
+
+                        <div class="formRow">
+
+                            <!-- Study Information combo box -->
+                            <label>Which study are you taking part of?</label>
+                            <select id="studyType" name="studyType">
+                                <option value="Long Term">Long Term</option>
+                                <option value="Short Term">Short Term</option>
+                            </select>
+
+                            <!-- Study Information id -->
+                            <label class="gapLabel">Assigned Study Id:</label>
+                            <input id="firstFourDigits"  type="text" name="firstFourDigits"  
+                                required maxlength="4" size="4" placeholder="A777"/>
+                            -
+                            <input id="secondFourDigits" type="text" name="secondFourDigits" 
+                                required maxlength="4" size="4" placeholder="B888"/>
+                        </div>
+                    </fieldset>
+
+                    <!-- Additional Information (Comments) fs -->
+                    <fieldset>
+
+                        <legend>Additional Information (Comments)</legend>
+                        <div class="formRow">
+
+                            <textarea id="comments" name="comments" rows="5" cols="60"></textarea>
+                        </div>
+                    </fieldset> 
+                </fieldset>
+
+                <!-- btn fs -->
+                <fieldset>
+
+                    <div class="formRow">
+                        
+                        <input id="clearBtn"  type="reset"  value="Clear Form"/>
+                        <input id="submitBtn" type="button" value="Submit Information"/>
+                    </div>
+                </fieldset>
+            </form>
+
+            <!-- footer -->
+            <footer>
+                
+                CMSC Research Institute &reg;
+            </footer>
+        </div>
+    </body>
+</html>

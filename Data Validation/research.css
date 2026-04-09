@@ -1,0 +1,142 @@
+/* html */
+html {
+    
+    font-size: 18px;
+}
+
+/* wrapper */
+#wrapper {
+
+    background-color: white;
+    width: fit-content;
+    margin: 1rem;
+    padding: 1rem;
+} 
+
+/* mainHeader - Shadow for Research Form title */
+#mainHeader {
+
+    font-size: 2rem;
+    text-decoration: underline;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 1rem;
+    text-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+/* fieldset - Round borders for fieldset areas */
+fieldset {
+
+    margin: .2rem .2rem;
+    padding-right: 10rem;
+    border: 0.1rem solid grey;
+    border-radius: 0.5rem;
+}
+
+/* outerFS */
+.outerFS {
+
+    margin: 1rem 0rem;
+    padding-right: 1rem;
+    border: 0.1rem solid grey;
+    border-radius: 0.5rem;
+}
+
+/* legend - Brown color legend */
+legend {
+
+    font-weight: bold;
+    color: #A0522D;
+    padding: 0rem 1rem;
+}
+
+.outerLegend {
+
+    font-style: italic;
+}
+
+/* formRow */
+.formRow {
+    
+    padding: .25rem;   
+}
+
+/* input */
+input[type="text"],
+input[type="number"],
+input[type="email"] {
+    
+    font-size: 1rem;
+    padding: .1rem;  
+    border: 0.05rem solid black;
+    border-radius: 0.25rem;
+}
+
+/* firstname and lastname */
+#firstname,
+#lastname {
+    
+    width: 12rem;
+}
+
+/* email */
+#email {
+    
+    width: 18rem;
+}
+
+/* gapLabel */
+.gapLabel {
+
+    margin-left: 1.5rem;
+}
+
+/* checkboxes and radio buttons */
+input[type="checkbox"],
+input[type="radio"] {
+
+    margin-left: .55rem;
+    transform: scale(1.25);
+    vertical-align: middle;
+    position: relative;
+    top: -0.5rem;
+}
+
+/* combo box */
+select {
+
+    font-size: 1rem;
+    padding: 0.1rem;
+    border: 0.1rem solid black;
+    border-radius: 0.25rem;
+}
+
+/* textarea */
+textarea {
+
+    font-size: 1rem;
+    border: 0.1rem solid black;
+    border-radius: 0.25rem; 
+}
+
+/* btn */
+input[type="reset"],
+input[type="button"] {
+
+    font-size: 1rem;
+    background-color: lightgrey;
+    border: 0.1rem solid grey;
+    border-radius: 0.25rem;
+}
+
+/* footer */
+footer {
+
+    text-align: center;
+    border-top: 0.2rem double black;
+    border-bottom: 0.2rem double black;
+    
+    font-size: 1rem;
+    margin-top: 1rem;
+    padding: 0.1rem 0rem; 
+}
