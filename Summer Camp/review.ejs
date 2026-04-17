@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8"/>
+        <title>Application Review</title>
+    </head>
+
+    <body>
+
+        <h1>Review Application</h1>
+        
+        <form id="reviewForm" action="/review" method="post">
+            <fieldset>
+                <label><strong>Email Address:</strong></label>
+                <input type="text" name="email"/>
+            </fieldset>
+            <br/>
+
+            <input type="reset" value="Reset"/>
+            <input type="button" id="submitBtn" value="Submit Request"/>
+        </form>
+        <hr/>
+
+        <a href="/">HOME</a>
+        <script>
+
+            document.getElementById("submitBtn").onclick = function() {
+                
+                document.getElementById("reviewForm").submit();
+            };
+        </script>
+    </body>
+</html>

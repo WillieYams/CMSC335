@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+        
+    <head>
+
+        <meta charset="UTF-8"/>
+        <title>Application Confirmation</title>
+    </head>
+
+    <body>
+
+        <h1>Applicants Data</h1>
+
+        <p><strong>Name: </strong><%=applicant.name%></p>
+        <p><strong>Email Address: </strong><%=applicant.email%></p>
+        <p><strong>GPA: </strong><%=applicant.gpa%></p>
+        <p><strong>Background Information: </strong><br/><%=applicant.info%></p>
+
+        <hr/>
+        <p><strong>Task completed at <%= new Date() %></strong></p>
+        <hr/>
+
+        <a href="/">HOME</a>
+    </body>
+</html>

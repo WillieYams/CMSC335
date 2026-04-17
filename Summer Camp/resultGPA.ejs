@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8"/>
+        <title>Result GPA</title>
+    </head>
+
+    <body>
+
+        <h1>Display GPAs Greater than or Equal to</h1>
+
+        <table border="1">
+            <tr>
+                <th>Name</th>
+                <th>GPA</th>
+            </tr>
+            
+            <% result.forEach(function(applicant) { %>
+            <tr>
+                
+                <td><%= applicant.name %></td>
+                <td><%= applicant.gpa %></td>
+            </tr>
+            <% }); %>
+        
+        </table>
+        <br/>
+
+        <a href="/">HOME</a>
+    </body>
+</html>
